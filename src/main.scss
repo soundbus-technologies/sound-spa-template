@@ -1,0 +1,86 @@
+$backcolor: #EBEBEB;
+$color1: #EFEFEF;
+$color2: #F0F2F1;
+$color3: #F7F7F7;
+$color4: #E5E5E5;
+
+$font1: #444444;
+$font2: #686868;
+$font3: #878787;
+$font4: #AEAEAE;
+$font5: #B2B2B2;
+
+$red: #F36F70;
+$green: #6FD349;
+
+body,html {
+  min-width: 600px;
+  height: 100%;
+  //background: $backcolor;
+}
+
+::-webkit-input-placeholder{color: $font3;}
+::-moz-placeholder{color: $font3;}
+:-moz-placeholder{color: $font3;}
+
+@font-face {
+  font-family: 'app-icon';  /* project id 436373 */
+  src: url('//at.alicdn.com/t/font_436373_mxf53ywypc8lg14i.eot');
+  src: url('//at.alicdn.com/t/font_436373_mxf53ywypc8lg14i.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_436373_mxf53ywypc8lg14i.woff') format('woff'),
+  url('//at.alicdn.com/t/font_436373_mxf53ywypc8lg14i.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_436373_mxf53ywypc8lg14i.svg#app-icon') format('svg');
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s ease;
+}
+.fade-enter, .fade-leave-active {
+  opacity: 0
+}
+.child-view {
+  position: absolute;
+  transition: all .2s cubic-bezier(.55,0,.1,1);
+}
+.slide-left-enter, .slide-right-leave-active {
+  opacity: 0;
+  -webkit-transform: translate(30px, 0);
+  transform: translate(30px, 0);
+}
+.slide-left-leave-active, .slide-right-enter {
+  opacity: 0;
+  -webkit-transform: translate(-30px, 0);
+  transform: translate(-30px, 0);
+}
+[v-cloak] {
+  display: none;
+}
+
+#container {
+  height: 100%;
+}
+#app {
+  min-width: 1000px;
+}
+
+.layout-breadcrumb{
+  padding: 0 15px 10px 15px;
+  background: #f5f7f9;
+}
+
+.input-block {
+  margin: 10px 0 10px 0;
+  padding: 10px 10px 0;
+  border-top: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.table-block {
+  margin: 20px 10px 10px ;
+}
+
+.page-block {
+  display: inline-block;
+  margin: 5px;
+  float: right;
+}

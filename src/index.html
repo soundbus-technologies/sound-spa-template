@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="format-detection" content="telephone=no"/>
+  <meta name="screen-orientation" content="portrait">
+  <title>新-声动应用平台</title>
+  <link rel="icon" href="./icon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="./icon.ico">
+  <link rel="Bookmark" href="./icon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+</head>
+<body>
+ <div id="container" v-cloak>
+   <Login v-if="!hasLogin" v-on:change-status="changeStatusTrue"></Login>
+   <div id="app" v-if="hasLogin">
+     <Tab v-on:login-out="changeStatusFalse"></Tab>
+     <Layout></Layout>
+   </div>
+ </div>
+</body>
+</html>

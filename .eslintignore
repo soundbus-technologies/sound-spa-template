@@ -1,0 +1,5 @@
+/src/assets/js/*
+/src/vuex/store.js
+/config
+/build
+/dist
