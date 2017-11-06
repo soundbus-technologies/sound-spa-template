@@ -6,10 +6,10 @@
   "scripts": {
     "mock": "cross-env NODE_ENV=development supervisor ./server/model/app.js",
     "dev": "cross-env NODE_ENV=development node config/dev-client.js",
-    "build:aws": "rm -rf ./dist && cross-env NODE_ENV=aws node config/build.js",
-    "build:ali": "rm -rf ./dist && cross-env NODE_ENV=ali node config/build.js",
-    "build:test": "rm -rf ./dist && cross-env NODE_ENV=test node config/build.js",
-    "build:qa": "rm -rf ./dist && cross-env NODE_ENV=qa node config/build.js"
+    "build:aws": "rm -rf ./public && cross-env NODE_ENV=aws node config/build.js",
+    "build": "rm -rf ./public && cross-env NODE_ENV=production node config/build.js",
+    "build:test": "rm -rf ./public && cross-env NODE_ENV=test node config/build.js",
+    "build:qa": "rm -rf ./public && cross-env NODE_ENV=qa node config/build.js"
   },
   "author": "appian",
   "license": "ISC",
