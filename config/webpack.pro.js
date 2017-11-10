@@ -16,7 +16,7 @@ let pro = {
 		vendor: ['vue', 'vue-router', 'vuex', 'iview'],
 	},
 	output : {
-		path: path.resolve(__dirname, '../public'),
+		path: path.resolve(__dirname, '../dist'),
 		publicPath: require('./cdn'),
 		filename: 'static/js/[name].[chunkhash].js', // '[name].[chunkhash].js?'
 		chunkFilename: 'static/js/[id].js?[chunkhash]',

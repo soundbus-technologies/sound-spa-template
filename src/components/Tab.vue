@@ -11,9 +11,9 @@
 		border-radius: 3px;
 		float: left;
 		&:after {
-			content: '声动应用平台';
+			content: '声动平台';
 			position: absolute;
-			right: -100px;
+			right: -70px;
 			top: -4px;
 			color: #777;
 			font-size: 16px;
@@ -27,7 +27,6 @@
 		background: #fafafa;
 		overflow: hidden;
 		box-shadow: 0 5px 10px rgba(0,0,0,.1);
-    border-bottom: 2px solid #2fe015;
 	}
 
 	.layout-ceiling-main {
@@ -41,7 +40,7 @@
 		font-weight: 400;
 		margin: 0 5px;
 		&:hover {
-			color: #6FD349;
+			color: #F36F70;
 		}
 	}
 </style>
@@ -50,9 +49,9 @@
 		<a href="#"><div class="layout-logo"></div></a>
 		<div class="layout-ceiling-main">
 			<a href="#" @click="loginOut">登出</a> |
-      <!--<a href="#">开放平台</a> |
-      <a href="#">应用平台</a> |
-      <a href="#">管理平台</a>-->
+			<a href="#">开放平台</a> |
+			<a href="#">应用平台</a> |
+			<a href="#">管理平台</a>
 		</div>
 	</div>
 </template>

@@ -1,17 +1,20 @@
+/**
+ * Created by appian on 17/3/6.
+ */
 import { ajaxGet, ajaxPost } from './../../assets/js/tools';
 
 /**
- * 登录
+ * 登录请求
  */
 export function userLogin(obj) {
-	return ajaxPost('', obj, 'application/json');
+	return ajaxPost('/manage/login', obj, 'application/json');
 }
 
 /**
- * 登出
+ * 登录请求
  */
 export function userLoginOut(obj) {
-	return ajaxPost('', obj, 'application/json');
+	return ajaxPost('/manage/logout', obj, 'application/json');
 }
 
 /**
@@ -19,4 +22,12 @@ export function userLoginOut(obj) {
  */
 export function generateCommonList(obj) {
 	return ajaxGet('', obj);
+}
+
+export function getInitList(data) {
+  return ajaxPost('/newauth', data);
+}
+
+export function getToken() {
+  return ajaxGet('/newtest');
 }

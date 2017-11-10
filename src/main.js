@@ -60,8 +60,8 @@ new Vue({
 	store,
 	components: {
 		Login,
-		Tab,
-		Layout,
+    Tab,
+    Layout,
 	},
 }).$mount('#container');
 

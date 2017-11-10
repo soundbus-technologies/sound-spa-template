@@ -11,7 +11,6 @@ $font4: #AEAEAE;
 $font5: #B2B2B2;
 
 $red: #F36F70;
-$green: #6FD349;
 
 body,html {
   min-width: 600px;
@@ -24,12 +23,12 @@ body,html {
 :-moz-placeholder{color: $font3;}
 
 @font-face {
-  font-family: 'app-icon';  /* project id 436373 */
-  src: url('//at.alicdn.com/t/font_436373_mxf53ywypc8lg14i.eot');
-  src: url('//at.alicdn.com/t/font_436373_mxf53ywypc8lg14i.eot?#iefix') format('embedded-opentype'),
-  url('//at.alicdn.com/t/font_436373_mxf53ywypc8lg14i.woff') format('woff'),
-  url('//at.alicdn.com/t/font_436373_mxf53ywypc8lg14i.ttf') format('truetype'),
-  url('//at.alicdn.com/t/font_436373_mxf53ywypc8lg14i.svg#app-icon') format('svg');
+  font-family: 'iconfont';
+  src: url('//at.alicdn.com/t/font_1476261407_2605338.eot'); /* IE9*/
+  src: url('//at.alicdn.com/t/font_1476261407_2605338.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('//at.alicdn.com/t/font_1476261407_2605338.woff') format('woff'), /* chrome、firefox */
+  url('//at.alicdn.com/t/font_1476261407_2605338.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('//at.alicdn.com/t/font_1476261407_2605338.svg#iconfont') format('svg'); /* iOS 4.1- */
 }
 
 .fade-enter-active, .fade-leave-active {

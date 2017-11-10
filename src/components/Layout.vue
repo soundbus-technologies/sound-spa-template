@@ -63,13 +63,13 @@
         data() {
             return {
                 navList: [{
-                    first: '一级导航',
+                    first: '用户中心',
                     second: [{
                         to: {
-                            path: '/xxxxx',
+                            path: '/user/userlist',
                             query: { page: 1 },
                         },
-                        text: '二级导航',
+                        text: '用户管理',
                     }],
                 }],
             };

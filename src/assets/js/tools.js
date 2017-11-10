@@ -17,16 +17,15 @@
  */
 const isDev = process.env === 'development';
 let host;
-// 根据后端, 配置不同环境下请求的ip或域名
 if (process.env === 'development') {
 	host = `http://${window.location.host.split(':')[0]}:1700`;
 } else if (process.env === 'test') {
-	host = '';
+	host = 'http://appianspa.meckodo.com/api';
 } else if (process.env === 'qa') {
 	host = '';
 } else if (process.env === 'aws') {
 	host = '';
-} else if (process.env === 'ali'){
+} else {
 	host = '';
 }
 const cacheXhr = {};

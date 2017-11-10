@@ -7,7 +7,7 @@ const merge = require('webpack-merge');
 module.exports = {
 	output: {
 		// publicPath: '/static/',
-		path: resolve(__dirname, '../public'),
+		path: resolve(__dirname, '../dist'),
 		filename: '[name].js', // '[name].[chunkhash].js'
 		chunkFilename: '[id].js?[chunkhash]',
 	},
