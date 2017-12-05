@@ -28,6 +28,7 @@ module.exports = {
 		"no-console": 0,
 		"no-param-reassign": 0,
 		"no-underscore-dangle": 0,
+    "linebreak-style": 0
 		/*"eslint no-unused-expressions": ["error", { "allowShortCircuit": true }]*/
 	}
 };
